@@ -32,7 +32,7 @@ public class CalculationController {
 			powValue = String.valueOf("Base of/and Exponent is/are not set to numberic value.");
 		}
 		output.add(powValue);
-		return new Calculation("power", input, output);
+		return new Calculation();
 	}
 
 	@RequestMapping(value = "/sqrt/{value:.+}", method = RequestMethod.GET)
@@ -47,7 +47,7 @@ public class CalculationController {
 			sqrtValue = "Input value is not set no numberic value.";
 		}
 		output.add(sqrtValue);
-		return new Calculation("sqrt", input, output);
+		return new Calculation();
 	}
 
 }
